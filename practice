@@ -1,0 +1,14 @@
+from typing import List
+def get_requirements()->List[str]:
+    """
+    This function will return list of requirement from requirements.txt files.
+    """
+    requirement_data:object = open("requirements.txt","r")
+    data:str = requirement_data.read()
+    requirement_list:list[str] = list(data.split("\n"))
+    #print(requirement_list)
+    return requirement_list 
+
+
+
+
